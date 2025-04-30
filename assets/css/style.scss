@@ -1,0 +1,133 @@
+$primary: #DFDDD5;
+$secondary: #F68537;
+$tertiary: #392A19;
+
+
+body {
+    background-color: $primary;
+    font-family: Arial, sans-serif;
+  }
+
+
+/*NAVBAR SSECTION*/
+  .navbar-glass {
+    background-color: rgba(57, 42, 25, 1);
+    transition: background-color 0.4s ease;
+  }
+
+  .navbar-glass.scrolled{
+    background-color: rgba(57, 42, 25, 0.8); /* semi-transparent */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* optional soft shadow */
+  }
+
+  .navbar a {
+    color: $primary;
+  }
+
+.navbar-nav .nav-link {
+  color: white;
+  margin: 0.5rem 0;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107; /* yellow on hover */
+}
+
+@media (max-width: 991.98px) {
+  .navbar {
+    position: relative;
+    z-index: 1000;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(57, 42, 25, 0.95); /* match navbar color, slightly transparent */
+    padding: 1rem;
+    border-radius: 0 0 10px 10px;
+    z-index: 999;
+  }
+
+  .navbar-nav .nav-link {
+    color: white;
+    margin: 0.5rem 0;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #ffc107;
+  }
+}
+
+
+
+
+/*HERO SSECTION*/
+.carousel-img {
+    height: 690px;        /* Adjust height as needed */
+    object-fit: cover;    /* Keeps aspect ratio, crops if needed */
+  }
+  
+  .hero-caption {
+    z-index: 10;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  }
+
+
+
+/*GALLERY SSECTION*/
+.card-img-top {
+    height: 600px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover .card-img-top {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+/*ABOUT SSECTION*/
+  .about-section {
+    background-color: $tertiary;   /* dark charcoal, adjust as needed */
+    color: #f8f9fa;              /* light gray-white text */
+  }
+  .about-section h3 {
+    color: $primary;
+  }
+
+  /*TESTIMONIALS SSECTION*/
+  #testimonials .card {
+    transition: transform 0.3s ease;
+  }
+  
+  #testimonials .card:hover {
+    transform: translateY(-5px);
+  }
+  
+
+  .contact-bg {
+    border-radius: 1rem;
+    background-color: rgba(57, 42, 25, 0.8);
+  }
+
+  .contact-bg h2,label {
+    color: $primary;
+  }
+
+  #contact button {
+    background-color: $primary;
+  }
+
+  #contact button:hover {
+    background-color: $tertiary;
+    color: $primary;
+  }
+
+  .footer {
+    background-color: rgba(57, 42, 25, 1);
+    color: $primary;
+  }
